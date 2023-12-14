@@ -1,11 +1,11 @@
 import type { Config } from "tailwindcss";
-
 export default {
   content: ["./app/**/*.{js,jsx,ts,tsx}"],
+
   theme: {
     container: {
       center: true,
-      // padding: "1rem", // Adjust the padding as needed
+      // contianer: "1688px",
     },
     extend: {
       transform: ["hover", "focus"], // Add this line
@@ -18,7 +18,10 @@ export default {
         xxl40: "40px", // Extra Large
         xxxl50: "50px",
         xxxl60: "60px", // Extra Large
-        xlx100: "100px", // Extra Large
+        xlx130: "130px", // Extra Large
+      },
+      fontFamily: {
+        LeagueSpartan: ["League Spartan"],
       },
       colors: {
         darkbg: "#3B3B3B",
@@ -28,6 +31,8 @@ export default {
         white70: "#ffffffb3",
         white80: "#FFFFFFCC",
         white90: "#ffffffe6",
+        black70: "rgba(0, 0, 0, 0.70)",
+        black80: "rgba(0, 0, 0, 0.80)",
       },
       screens: {
         xs: "320px",

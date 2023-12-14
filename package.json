@@ -9,6 +9,8 @@
     "start": "remix-serve ./build/index.js"
   },
   "dependencies": {
+    "@fontsource-variable/league-spartan": "^5.0.18",
+    "@fontsource/league-spartan": "^5.0.18",
     "@remix-run/css-bundle": "^2.3.1",
     "@remix-run/node": "^2.3.1",
     "@remix-run/react": "^2.3.1",
@@ -19,10 +21,14 @@
     "rc-util": "^5.38.1",
     "react": "^18.2.0",
     "react-collapse": "^5.1.1",
+    "react-datepicker": "^4.24.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",
+    "react-player": "^2.13.0",
     "react-slick": "^0.29.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "video-react": "^0.16.0",
+    "video.js": "^8.6.1"
   },
   "devDependencies": {
     "@remix-run/dev": "^2.3.1",
