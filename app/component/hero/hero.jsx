@@ -4,7 +4,7 @@ const Hero = ({ title1, title2, content, buttonText, img }) => {
     <div className="container">
       <div className="items-center grid grid-cols-1 lgl:grid lgl:grid-cols-2">
         <div className="content text-center mt-7 lgl:text-left lgl:mt-3">
-          <h1 className=" text-[#020202] text-xxxl60 font-LeagueSpartan font-extrabolds">
+          <h1 className=" text-[#020202] font-LeagueSpartan font-extrabolds">
             {title1}
             <br /> {title2}
           </h1>
