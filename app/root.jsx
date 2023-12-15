@@ -1,3 +1,4 @@
+import MobileMenu from "./component/mobilenav/mobilenav";
 import Navbar from "./component/navbar/Navbar";
 import styles from "./styles/main.css";
 
@@ -11,7 +12,15 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 export const links = () => [
-  ...(styles ? [{ rel: "stylesheet", href: styles }] : []),
+  ...(styles
+    ? [
+        { rel: "stylesheet", href: styles },
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700;800;900&display=swap",
+        },
+      ]
+    : []),
 ];
 
 export default function App() {
@@ -33,6 +42,9 @@ export default function App() {
             </div>
             <div className="menu flex items-center">
               <Navbar />
+            </div>
+            <div className="mobile">
+              <MobileMenu />
             </div>
           </div>
         </div>
